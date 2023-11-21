@@ -24,7 +24,7 @@ body {
     "nav section aside"
     "footer footer footer";
   grid-template-rows: 80px 1fr 170px;
-  grid-template-columns: 8% 1fr 20%;
+  grid-template-columns: 8% 1fr 22%;
   height: 100vh;
 }
 
@@ -48,12 +48,12 @@ nav {
 }
 
 section {
-  background: white;
+  background: #f4f4f4;
   grid-area: section;
 }
 
 aside {
-  background: #c9c9c9;
+  background: #f4f4f4;
   grid-area: aside;
 }
 
@@ -159,6 +159,7 @@ nav a:hover {
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   padding: 5px;
+  height: 100%;
 }
 
 .parent > div {
@@ -198,6 +199,38 @@ nav a:hover {
   grid-area: 4 / 1 / 5 / 3;
 }
 
+/* ASIDE */
+
+.container-aside {
+  background: #fff;
+  margin: 5px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container-news {
+  margin: 0 4px 0 0;
+  padding: 8px;
+  background: #fff;
+  display: flex;
+  align-items: start;
+}
+
+.pict-news img {
+  height: 86px;
+  width: auto;
+  margin-top: 4px;
+}
+
+.text-news {
+  margin-left: 10px;
+}
+
+.date {
+  margin: 3px 0 5px 0;
+}
+
 /* FOOTER */
 
 .col-top {
@@ -217,4 +250,18 @@ nav a:hover {
 
 .container-footer a {
   color: white;
+}
+
+.title-news {
+  font-weight: 600;
+}
+
+.date {
+  font-size: 11px;
+  color: #999;
+}
+
+.desc-news {
+  font-size: 13px;
+  color: #999;
 }
